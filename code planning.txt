@@ -1,0 +1,9 @@
+1. create a user_info text file. if the file exists, go to number 2
+2. show options: create account, login, delete account
+3. if user choose create account then take input username new password and confirm password. if new password and confirm password does not mach then print "both password did not mach, try again." and the process will repeat.
+4. the password should contain at least one uppercase char, number and a special char
+5. the username and password will be stroed in the user_info text file
+6. if the username and password already exists in the text file then show the message "you already have an account. Please login" else go to step 7.
+7. if user selects login then take the username and password as input and compare it to the user_info text file
+8. if the username and password matchs then print "congratulations, you logged in" else print "the username or password is invalid"
+9. if user selects delete account then take the username and password as input and print "are you sure you want to delete your account". if user inputs yes then delete the account else skip. 
