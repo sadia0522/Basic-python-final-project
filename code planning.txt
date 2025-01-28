@@ -1,12 +1,18 @@
 1. create a user_info.txt text file. if the file exists, go to number 2
-2. show options: create account, login, delete account and exit
+2. greet the use and show options: create account, login, delete account and exit
 3. if user choose create account then take input username new password and confirm password.
-4. the name can only have lowercase letters and numbers. If the user inputs any special characters then print "The username can only have lowercase cherecters and numbers"
-5. if the username already exists then print "This username is taken. Try again" and the process will repeat until a proper name is given.
-6. the password must contain at least one uppercase letter a number and a special character. else print "The password must contain at least one uppercase letter a number and a special charater."
-7. if new password and confirm password macthes then print "user created successfully" else print "both password did not mach, try again." and the process will repeat until a proper password is given.
-8. if the username and password are given properly and the password matchs then add them to the user_info.txt file
-9. if user selects login then take the username and password as input and compare it to the user_info.txt file
-
-8. if the username and password matchs then print "congratulations, you logged in" else print "the username or password is invalid"
-9. if user selects delete account then take the username and password as input and print "are you sure you want to delete your account". if user inputs yes then delete the account else skip. 
+4. the name can only have lowercase letters and numbers.
+5. If the user inputs any special characters then print "The username can only have lowercase cherecters and numbers"
+6. if the username already exists then print "This username is taken. Try again" and the process will repeat until a proper name is given.
+7. the password must contain at least one uppercase letter a number and a special character
+8. else print "The password must contain at least one uppercase letter a number and a special charater."
+9. if new password and confirm password macthes then print "user created successfully" else print "both password did not mach, try again."
+10. this process will repeat until a proper password is given.
+11. if the username and password are given properly and the password matchs then add them to the user_info.txt file
+12. if user selects login then take the username and password as input and compare it to the user_info.txt file
+13. if user gives the correct username and password then print "Congratulations! You have logged in successfully"
+14. else print "The username or the password is incorrect. Try again."
+15. if user selects delete account then take the username and password as input 
+16. if the username and password exist in the user_info.txt file then print "are you sure you want to delete your account".
+17. if user inputs yes then delete the account and print "Your account has been deleted." else print "Your account was not deleted.". 
+18. if user selects exit then the print "Thank you for using this registrating and login system" and exit.
