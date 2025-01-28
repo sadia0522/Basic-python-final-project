@@ -96,7 +96,7 @@ while True:
                         print("Invalid input!")
                         continue
             else:
-                print("The username or the password is invalid!")
+                print("The username or the password is incorrect or does not exist!")
 
 # this part is for exiting the program
     elif userInp == "4":
