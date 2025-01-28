@@ -30,7 +30,9 @@ while True:
         uNameChecker = True
         while uNameChecker:
             username = input("Username: ")
-            if username.isalnum() and username.islower():
+            if username.isnumeric():
+                    print("The username must contain a letter")
+            elif username.isalnum() and username.islower():
                 with open("user_info.txt", "r") as file:
                     if username in file.read():
                         print("This username is taken. Try again.")
@@ -48,7 +50,7 @@ while True:
                 else:
                     print("Both password did not mach. Try again.")
                     continue
-
+        
         with open("user_info.txt", "a") as file:
             file.write(f"{username}\n")
             file.write(f"{passwd}\n")
@@ -57,13 +59,16 @@ while True:
     elif userInp == "2":
         username = input("Username: ")
         passwd = getpass("Password: ")
-        with open("user_info.txt", "r") as file:
-            if username and passwd in file.read():
-                print("\nCongratulations! You have successfully logged in.\n")
-            elif username or passwd in file.read():
-                print("\nThe username or password is incorrect. Try again.\n")
-            else:
-                print("\nUser does not exist\n")
+        if username.isnumeric()or not username.isalnum():
+            print("\nThe username or the password is incorrect. Try again.\n")
+        else:    
+            with open("user_info.txt", "r") as file:
+                if username and passwd in file.read():
+                    print("\nCongratulations! You have successfully logged in.\n")
+                elif username or passwd in file.read():
+                    print("\nThe username or password is incorrect. Try again.\n")
+                else:
+                    print("\nUser does not exist\n")
 
 # This part is for deleting an account
     elif userInp == "3":
